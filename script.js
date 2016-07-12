@@ -6,10 +6,9 @@ function sum(num1, num2) {
   return num1 + num2;
 }
 
-var resultSum = sum(1,2);
 
-console.log(resultSum === 3); // =>true
-console.log(resultSum === 2); // => false
+
+console.log(sum(1,5));
 
 /* Define a function called isEqual that takes two arguments and returns a boolean. Return true if the two arguments are equal and return false if they are not.
 */
@@ -21,8 +20,8 @@ function isEqual(arg1, arg2) {
     return false;
   }
 }
-isEqual(5,5) // ==> true
-isEqual(7,11) // ==> false
+console.log(isEqual(5,5)); // ==> true
+console.log(isEqual(7,11)); // ==> false
 
 /* Define a function called discountPercentage that returns the total discount ($), given the original amount and discount percentage
 
@@ -36,7 +35,7 @@ function discountPercentage(amount, discount){
   }
 }
 
-discountPercentage(574.54, 33);
+console.log(discountPercentage(574.54, 33));
 
 
 /* Define a function called stringCapitalize that takes a string as an argument and returns the same string with the first letter of each word capitalized. Assume that each individual word is separated by only one space. */
@@ -50,7 +49,7 @@ function stringCapitalize(string) {
     return arrayCaps.join(" ")
   }
 
-stringCapitalize("hello how are you")
+console.log(stringCapitalize("hello, how are you?"))
 //test code console.log(friends[0].charAt(0).toUpperCase())
 
 /* Define a function called evenNumbers that takes an arbitrary integer as an argument, from 0 to 100, and outputs all the even integers from 0 to that arbitrary number. */
@@ -89,8 +88,9 @@ function isDivisible(dividend, divisor){
     return false;
   }
 }
-isDivisible(20, 5) // ==> true
-isDivisible(45, 2) // ==> false
+console.log(isDivisible(20, 5)); // ==> true
+console.log(isDivisible(45, 2)); // ==> false
+
 
 /*
 Bonus: Write a function called oddNumbers that takes an arbitrary integer as an argument, from 0 to 100. If the number is greater than 40 then output all the odd integers from 40 to the arbitrary number. If the number is less than 40, output all the odd integers from 0 to 40.
